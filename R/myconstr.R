@@ -2,17 +2,16 @@
 #'Constructor Function
 # My constructor function that takes in 2 vectors (x,y) and alpha
 #'
-#' @param x
-#' @param y
-#' @param alpha
-#'
+#' @param x named list
+#' @param y named list
+#' @param alpha confidence inveral
+#' @importFrom stats t.test
 #' @return a stats_list of my constructor function
 #' @export
 #'
 #' @examples
 #'
 myconstr = function(x, y, alpha) {
-
   # Calculate t-test
   ttest = t.test(x, y, var.equal = TRUE, conf.level = 1 - alpha)
 
@@ -27,16 +26,3 @@ myconstr = function(x, y, alpha) {
   return(stats_list)
 }
 
-#' Print Rttest function
-#Print the data frame using kableExtra::kable()
-#'
-#' @param x
-#'
-#' @return a kable of the columns x and y
-#' @export
-#'
-#' @examples
-print.Rttest = function(x) {
-  kable(x$df, booktabs = TRUE) %>%
-    kable_styling(latex_options = "scale_down")
-}
