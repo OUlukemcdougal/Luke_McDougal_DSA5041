@@ -2,6 +2,7 @@
 
 S3method(print,Rttest)
 export(myconstr)
+export(print.Rttest)
 importFrom(dplyr,'%>%')
 importFrom(kableExtra,'kable')
 importFrom(kableExtra,'kable_styling')
