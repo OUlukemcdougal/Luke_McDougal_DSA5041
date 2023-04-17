@@ -1,0 +1,88 @@
+══ Documenting ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+ℹ Updating mypackage documentation
+ℹ Loading mypackage
+Warning: [myconstr.R:12] @examples requires a value
+Warning: [print.R:14] @examples requires a value
+
+══ Building ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Setting env vars:
+• CFLAGS    : -Wall -pedantic -fdiagnostics-color=always
+• CXXFLAGS  : -Wall -pedantic -fdiagnostics-color=always
+• CXX11FLAGS: -Wall -pedantic -fdiagnostics-color=always
+• CXX14FLAGS: -Wall -pedantic -fdiagnostics-color=always
+• CXX17FLAGS: -Wall -pedantic -fdiagnostics-color=always
+• CXX20FLAGS: -Wall -pedantic -fdiagnostics-color=always
+── R CMD build ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+✔  checking for file 'C:\Users\19725\Documents\mypackage/DESCRIPTION' ...
+─  preparing 'mypackage':
+✔  checking DESCRIPTION meta-information ...
+─  checking for LF line-endings in source and make files and shell scripts
+─  checking for empty or unneeded directories
+   Omitted 'LazyData' from DESCRIPTION
+─  building 'mypackage_0.1.0.tar.gz'
+   
+══ Checking ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Setting env vars:
+• _R_CHECK_CRAN_INCOMING_REMOTE_               : FALSE
+• _R_CHECK_CRAN_INCOMING_                      : FALSE
+• _R_CHECK_FORCE_SUGGESTS_                     : FALSE
+• _R_CHECK_PACKAGES_USED_IGNORE_UNUSED_IMPORTS_: FALSE
+• NOT_CRAN                                     : true
+── R CMD check ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+─  using log directory 'C:/Users/19725/AppData/Local/Temp/Rtmp4uBQfV/file2b9c7b003c3c/mypackage.Rcheck'
+─  using R version 4.2.2 (2022-10-31 ucrt)
+─  using platform: x86_64-w64-mingw32 (64-bit)
+─  using session charset: UTF-8
+─  using options '--no-manual --as-cran'
+✔  checking for file 'mypackage/DESCRIPTION'
+─  checking extension type ... Package
+─  this is package 'mypackage' version '0.1.0'
+─  package encoding: UTF-8
+✔  checking package namespace information
+✔  checking package dependencies (1.5s)
+✔  checking if this is a source package ...
+✔  checking if there is a namespace
+✔  checking for executable files (412ms)
+✔  checking for hidden files and directories ...
+✔  checking for portable file names
+✔  checking serialization versions
+✔  checking whether package 'mypackage' can be installed (3s)
+✔  checking installed package size ... 
+✔  checking package directory
+✔  checking for future file timestamps ... 
+✔  checking DESCRIPTION meta-information (343ms)
+✔  checking top-level files
+✔  checking for left-over files ...
+✔  checking index information
+✔  checking package subdirectories ... 
+✔  checking R files for non-ASCII characters ... 
+✔  checking R files for syntax errors ... 
+✔  checking whether the package can be loaded (653ms)
+✔  checking whether the package can be loaded with stated dependencies (545ms)
+✔  checking whether the package can be unloaded cleanly (677ms)
+✔  checking whether the namespace can be loaded with stated dependencies (567ms)
+✔  checking whether the namespace can be unloaded cleanly (779ms)
+✔  checking loading without being on the library search path (733ms)
+✔  checking dependencies in R code (570ms)
+✔  checking S3 generic/method consistency (895ms)
+✔  checking replacement functions (559ms)
+✔  checking foreign function calls (564ms)
+✔  checking R code for possible problems (4.1s)
+✔  checking Rd files ... 
+✔  checking Rd metadata ... 
+✔  checking Rd line widths ... 
+✔  checking Rd cross-references ... 
+✔  checking for missing documentation entries (555ms)
+✔  checking for code/documentation mismatches (1.6s)
+✔  checking Rd \usage sections (1000ms)
+✔  checking Rd contents ... 
+✔  checking for unstated dependencies in examples ... 
+─  checking examples ... NONE
+✔  checking for non-standard things in the check directory
+✔  checking for detritus in the temp directory
+   
+   
+── R CMD check results ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────── mypackage 0.1.0 ────
+Duration: 22.3s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
