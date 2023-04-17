@@ -7,7 +7,7 @@
 #' @param alpha confidence inveral
 #' @importFrom stats t.test
 #' @return a stats_list of my constructor function
-#' @export
+#'
 #'
 #' @examples
 #'
