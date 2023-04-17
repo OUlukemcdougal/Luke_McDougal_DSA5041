@@ -8,8 +8,8 @@
 #' @importFrom kableExtra 'kable_styling'
 #' @return a kable of the columns x and y
 #'
+#' @export print.Rttest
 #' @export
-#'
 #'
 #' @examples
 print.Rttest = function(x, ...) {
