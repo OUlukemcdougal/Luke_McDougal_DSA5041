@@ -19,7 +19,7 @@ plot.Rttest = function(x, ...){
 
   merge_df = merge(x = x_df, y = y_df, all = TRUE)
 
-  ggplot(merge_df, aes(x = letter , y= value , fill=letter)) +
+  ggplot2::ggplot(merge_df, aes(x = letter , y= value , fill=letter)) +
     geom_boxplot()
 
 }
