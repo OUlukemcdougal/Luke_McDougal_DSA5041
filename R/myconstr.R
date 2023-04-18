@@ -9,7 +9,7 @@
 #' @return a stats_list of my constructor function
 #' @export
 #'
-#' @examples
+#'
 #'
 myconstr = function(x, y, alpha) {
   # Calculate t-test

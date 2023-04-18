@@ -11,7 +11,7 @@
 #' @export print.Rttest
 #' @export
 #'
-#' @examples
+#'
 print.Rttest = function(x, ...) {
   kable(x$df, booktabs = TRUE) %>%
     kable_styling(latex_options = "scale_down")
